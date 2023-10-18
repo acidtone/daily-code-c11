@@ -1,0 +1,43 @@
+html, body {
+  font-size: 32px;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  border: 1px solid black;
+  
+  background-color: #bbcc83;
+  color: #0C3A09;
+  
+  text-align: center;
+  text-decoration: none;
+  
+  transition: 250ms;
+}
+
+nav a:hover {
+  color: #bbcc83;
+  background-color: #0C3A09;
+}
+
+nav a:active {
+  background-color: #AD6E0B;
+  color: #0C3A09;
+  transition: none;
+}
+
+@media (width > 1024px) {
+  nav ul {
+    display: flex;
+    /* justify-content: space-evenly; */
+  }
+  nav ul > * {
+    flex: auto;
+  }
+}
