@@ -1,6 +1,10 @@
 // An array of objects that now replace the array of numbers from last session
 const animals = [
   {
+    id:           40,
+    title:        'Kitten'
+  },
+  {
     id:           237,
     title:        'Puppy'
   },
