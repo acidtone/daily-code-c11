@@ -1,5 +1,5 @@
 // An array of objects that now replace the array of numbers from last session
-export const animals = [
+const animals = [
   {
     id:           237,
     title:        'Puppy'
