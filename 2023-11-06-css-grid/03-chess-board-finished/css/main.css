@@ -1,0 +1,31 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Start by defining grid-template-columns on the container */
+
+section {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  
+  width: 75vmin;
+  aspect-ratio: 1 / 1;
+
+  background-color: white;
+}
+
+article:nth-child(-n + 8):nth-child(even),
+article:nth-child(n + 8):nth-child(-n + 16):nth-child(odd),
+article:nth-child(n + 17):nth-child(-n + 24):nth-child(even),
+article:nth-child(n + 25):nth-child(-n + 32):nth-child(odd),
+article:nth-child(n + 33):nth-child(-n + 40):nth-child(even),
+article:nth-child(n + 41):nth-child(-n + 48):nth-child(odd),
+article:nth-child(n + 49):nth-child(-n + 56):nth-child(even),
+article:nth-child(n + 57):nth-child(-n + 64):nth-child(odd) {
+  background-color: black;
+}

@@ -1,0 +1,9 @@
+@media screen and (width > 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 30ch;
+  }
+  header, footer {
+    grid-column: span 2;
+  }
+}

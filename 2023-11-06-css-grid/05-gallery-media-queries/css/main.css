@@ -1,0 +1,17 @@
+main {
+  display: grid;
+}
+
+@media screen and (min-width: 600px) {
+  /* Grid code here */
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Grid code here */
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
